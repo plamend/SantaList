@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<EditText
+    android:id="@+id/personName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="18dp"
+    android:hint="Enter person name"/>
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Present name:"
+        android:textSize="18dp"
+        android:layout_below="@+id/personName"/>
+<EditText
+    android:id="@+id/presentName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/personName"
+    android:layout_toRightOf="@+id/textview1"
+    android:hint="Car"
+    android:textSize="18dp"/>
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/presentName"
+        android:text="Present price:"
+        android:textSize="18dp"/>
+    <EditText
+        android:id="@+id/presentPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/presentName"
+        android:layout_toRightOf="@+id/textview2"
+        android:hint="25.00 $"
+        android:textSize="18dp"
+        android:inputType="numberDecimal"/>
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/presentPrice"
+        android:text="Present Description:"
+        android:textSize="18dp"/>
+    <EditText
+        android:id="@+id/presentDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview3"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/presentDes"
+        android:textSize="18dp"
+        android:text="Submit"
+        />
+
+
+</RelativeLayout>
